@@ -1,0 +1,70 @@
+main {
+    width: fit-content;
+}
+
+.project-content > div {
+    margin-bottom: -8px;
+}
+
+.accordion {
+    background-color: #000000;
+    color: var(--white);
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+hr.solid {
+    border-top: 0.25px solid var(--primary-color);
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+  
+.panel {
+    background-color: #000000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion {
+    /* font-weight: 400; */
+    font-family: 'Work Sans', sans-serif;
+    font-size: 58px;
+    line-height: 1.0;
+    letter-spacing: -4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion :nth-child(2) {
+    justify-self: flex-end;
+
+}
+
+.date {
+    margin-left: auto;
+}
+
+.module-detail {
+    font-size: 26px;
+    line-height: 1.1;
+    color: var(--primary-color);
+    letter-spacing: -1.25px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 26px;
+        letter-spacing: -1.25px;
+    }
+    .date {
+        font-size: 26px;
+        letter-spacing: -1.25px;
+        margin-left: 10px;
+    }
+}

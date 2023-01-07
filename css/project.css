@@ -1,0 +1,159 @@
+.project-content {
+    margin: 80px 30px 0px 30px;
+}
+
+.project-content > div {
+    margin-bottom: 60px;
+}
+
+.project-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* margin-bottom: 60px; */
+}
+
+.module-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 30px 0px;
+}
+
+.module-title {
+    font-size: 26px;
+    line-height: 1.1;
+    color: var(--black);
+    letter-spacing: -1.25px;
+    text-decoration: none;
+}
+
+.module-detail {
+    font-size: 26px;
+    line-height: 1.1;
+    color: var(--primary-color);
+    letter-spacing: -1.25px;
+    text-decoration: none;
+}
+
+.module-description {
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--black);
+    letter-spacing: -1.25px;
+    text-decoration: none;
+}
+
+.module-description-link {
+    text-decoration: none;
+    list-style: none;
+    color: var(--primary-color);
+}
+
+.quote-text {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.quote-text > p {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.075;
+    letter-spacing: -2.5px;
+    max-width: 980px;
+    color: #222222;
+}
+
+.footer-links :nth-of-type(5) {
+    margin-left: auto; 
+}
+
+.next-project-link {
+    display: flex;
+    transition: color 0.4s ease;
+}
+
+.next-project-link:hover {
+    color: var(--primary-color);
+}
+
+.next-project-link > svg {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.next-project-links > a {
+    text-decoration: none;
+}
+
+.next-project-text {
+    color: #222;
+    transition: color 0.4s ease;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    margin-right: 8px;
+    padding-bottom: 4px;
+}
+
+.next-project-text:hover {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {
+    .project-content {
+        margin: 80px 20px 0px 20px;
+    }
+    .project-content > div {
+        margin-bottom: 60px;
+    }
+
+    .quote-text {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .quote-text > p {
+        font-size: 32px;
+        letter-spacing: -1.25px;
+        line-height: 1.1;
+    }
+
+    .module-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin: 30px 0px;
+    }
+
+    .module-title {
+        font-size: 22px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+    
+    .module-detail {
+        font-size: 22px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+
+    .module-description {
+        font-size: 22px;
+        line-height: 1.25;
+        letter-spacing: -1px;
+    }
+
+    .footer-links :nth-of-type(5) {
+        margin-left: 0; 
+    }
+
+    .next-project-link > svg {
+        margin-top: 0px;
+        margin-left: 10px;
+        padding: 2px;
+    }
+
+}

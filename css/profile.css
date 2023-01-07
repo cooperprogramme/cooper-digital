@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+}
+
+.cooper:hover {
+    color: var(--white);
+}
+
+h1 {
+    color: var(--white);
+}
+
+.module-title {
+    color: var(--white);
+}
+
+.module-description {
+    color: var(--white);
+}
+
+.module-detail {
+    font-size: 58px;
+    line-height: 1;
+    color: var(--white);
+    letter-spacing: -4px;
+}
+
+.module-description-link {
+    color: var(--white);
+}
+
+.quote-text > p {
+    color: var(--white);
+}
+
+.footer-text:hover {
+    color: var(--white);
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .module-detail {
+        font-size: 22px;
+        line-height: 1.2;
+        letter-spacing: -0.8px;
+    }
+
+}

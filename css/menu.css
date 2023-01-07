@@ -1,0 +1,175 @@
+.menu-wrap {
+    position: fixed;
+    top: 25px;
+    right: 75px;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+.plus {
+    fill: var(--primary-color);
+    transition: all 0.4s ease;
+}
+
+.plusClass path {
+    fill: #fff;
+}
+
+.menu-wrap .toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 55px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* rotate on hover */
+.menu-wrap .toggle:hover + .hamburger > div {
+    transform: rotate(90deg);
+}
+
+/* toggle animate */
+.menu-wrap .toggle:checked + .hamburger > div {
+    transform: rotate(135deg);
+    background-color: #fff;
+    transition: all 0.4s ease;
+}
+
+/* rotate on hover when checked */
+.menu-wrap .toggle:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+/* show menu */
+.menu-wrap .toggle:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggle:checked ~ .menu > div {
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.menu-wrap .toggle:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+.menu-wrap .menu > div {
+    background: var(--overlay-color);
+    width: 200vw;
+    height: 200vh;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    opacity: 1;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+    animation-duration: 0.4s;
+}
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.menu-wrap .menu > div > div {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul {
+    position: fixed;
+    left: 30px;
+    bottom: 40px;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 58px;
+    line-height: 1.02;
+    letter-spacing: -4px;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover {
+    color: var(--primary-color);
+}
+
+.menu-wrap .menu > div > div > ul > li > a:active {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {  
+    .menu-wrap .hamburger {
+        width: 30px;
+        height: 35px;
+    }
+    .menu-wrap {
+        top: 25px;
+        right: 50px;
+    }
+}
