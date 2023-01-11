@@ -28,6 +28,7 @@
     color: var(--black);
     letter-spacing: -1.25px;
     text-decoration: none;
+    margin-bottom: 18px;
 }
 
 .module-detail {
