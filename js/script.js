@@ -27,40 +27,40 @@ var clientX = -300,
     innerCursor = document.querySelector(".cursor--inner"),
     link = document.querySelector(".link")
 
-var initCursor = function() {
-  // add listener to track the current mouse position
-  document.addEventListener("mousemove", function(e) {
-    clientX = e.clientX
-    clientY = e.clientY
-  });
+// var initCursor = function() {
+//   // add listener to track the current mouse position
+//   document.addEventListener("mousemove", function(e) {
+//     clientX = e.clientX
+//     clientY = e.clientY
+//   });
   
-  var render = function() {
-    TweenMax.set(outerCursor, {
-      x: clientX,
-      y: clientY,
-      delay: .08,
-      ease: Power1.easeOut
-    });
+//   var render = function() {
+//     TweenMax.set(outerCursor, {
+//       x: clientX,
+//       y: clientY,
+//       delay: .08,
+//       ease: Power1.easeOut
+//     });
     
-     TweenMax.set(innerCursor, {
-      x: clientX,
-      y: clientY
-    });
+//      TweenMax.set(innerCursor, {
+//       x: clientX,
+//       y: clientY
+//     });
     
-    requestAnimationFrame(render);
-  };
+//     requestAnimationFrame(render);
+//   };
   
-  requestAnimationFrame(render);
-};
+//   requestAnimationFrame(render);
+// };
 
-initCursor();
+// initCursor();
 
-function growOnHover() {
-link.addEventListener("mouseenter", function() {
-    TweenMax.to(outerCursor, 1, {scale: 2})
-});
-link.addEventListener("mouseleave", function() {
-    TweenMax.to(outerCursor, 1, {scale: 1})
-});
-}
-growOnHover();
+// function growOnHover() {
+// link.addEventListener("mouseenter", function() {
+//     TweenMax.to(outerCursor, 1, {scale: 2})
+// });
+// link.addEventListener("mouseleave", function() {
+//     TweenMax.to(outerCursor, 1, {scale: 1})
+// });
+// }
+// growOnHover();
