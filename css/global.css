@@ -1,211 +1,215 @@
 :root {
-  --black: #222222;
-  --primary-color: #879196;
-  --overlay-color: #3c3c3c;
-  --white: #ffffff;
-  --menu-speed: 0.75s;
+    --black: #222222;
+    --primary-color: #879196;
+    --overlay-color: #3C3C3C;
+    --white: #FFFFFF;
+    --menu-speed: 0.75s;
 }
 
 ::-moz-selection {
-  background-color: var(--primary-color);
-  color: #fff;
+    background-color: var(--primary-color);
+    color: #fff;
 }
-::selection {
-  background-color: var(--black);
-  color: #fff;
+ ::selection {
+    background-color: var(--black);
+    color: #fff;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 
 body {
-  font-family: 'Work Sans', sans-serif;
-  line-height: 1.4;
-  font-weight: 400;
-  font-style: normal;
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    font-style: normal;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
+  
 @keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 1;
-  letter-spacing: -4px;
-  max-width: 1200px;
-  color: #222222;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.0;
+    letter-spacing: -4px;
+    max-width: 1200px;
+    color: #222222;
 }
 
 .container {
-  /* max-width: 1860px; */
-  margin: auto;
-  overflow: hidden;
-  padding: 30px 30px;
+    /* max-width: 1860px; */
+    margin: auto;
+    overflow: hidden;
+    padding: 30px 30px;
 }
 
 .cooper {
-  color: #879196;
-  position: fixed;
-  z-index: 10;
-  transition: 0.3s;
-  margin: auto;
-  overflow: hidden;
-  margin: 20px 20px;
-  padding: 10px 10px;
+    color: #879196;
+    position: fixed;
+    z-index: 10;
+    transition: 0.3s;
+    margin: auto;
+    overflow: hidden;
+    margin: 20px 20px;
+    padding: 10px 10px;
 }
 
 .cooper:hover {
-  color: #222222;
+    color: #222222;
 }
 
 .newClass {
-  color: #fff;
+    color: #fff;
 }
 
 .newClass:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .title-spacer {
-  padding: 98px;
+    padding: 98px;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  grid-auto-rows: 52vh;
-  margin: 80px 30px 0px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    grid-auto-rows: 52vh;
+    margin: 80px 30px 0px 30px;
 }
 
 .grid > div > a {
-  text-decoration: none;
-  list-style: none;
+    text-decoration: none;
+    list-style: none;
 }
 
 .cover-image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  transition: 0.4s ease;
-  backface-visibility: hidden;
-  object-fit: cover;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .4s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
 }
 
 .grid > div:hover .cover-image {
-  opacity: 0;
+    opacity: 0;
 }
 
 .grid > div:hover .grid-text {
-  opacity: 1;
+    opacity: 1;
 }
 
 .grid-text {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: relative;
-  top: -52vh;
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    top: -52vh;
 }
 
+
 .project-title {
-  font-size: 26px;
-  line-height: 1.05;
-  color: var(--black);
-  letter-spacing: -1.25px;
-  margin: 2px;
-  text-decoration: none;
+    font-size: 26px;
+    line-height: 1.05;
+    color: var(--black);
+    letter-spacing: -1.25px;
+    margin: 2px;
+    text-decoration: none;
 }
 
 .project-detail {
-  font-size: 26px;
-  line-height: 1.05;
-  color: var(--primary-color);
-  letter-spacing: -1.25px;
-  margin: 2px;
+    font-size: 26px;
+    line-height: 1.05;
+    color: var(--primary-color);
+    letter-spacing: -1.25px;
+    margin: 2px;
 }
 
 .footer-links {
-  display: flex;
-  flex-direction: row;
-  margin: 120px 30px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    margin: 120px 30px 30px 30px;
 }
 
 .footer-links > a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .footer-text {
-  color: var(--primary-color);
-  transition: color 0.4s ease;
-  text-decoration: none;
-  list-style: none;
-  overflow: hidden;
-  margin-right: 8px;
+    color: var(--primary-color);
+    transition: color 0.4s ease;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    margin-right: 8px;
 }
 
 .footer-text:hover {
-  color: #222;
+    color: #222;
 }
 
 /* small screens */
 @media screen and (max-width: 680px) {
-  .mobile-title-hide {
-    opacity: 0;
-    display: none;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 80px 20px 0px 20px;
-  }
+    .mobile-title-hide {
+        opacity: 0;
+        display: none;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 80px 20px 0px 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-  .container {
-    padding: 25px 20px;
-  }
+    .container {
+        padding: 25px 20px;
+    }
 
-  h1 {
-    font-size: 32px;
-    letter-spacing: -2px;
-    max-width: 380px;
-    /* padding-left: 8px; */
-  }
+    h1 {
+        font-size: 32px;
+        letter-spacing: -2px;
+        max-width: 380px;
+        /* padding-left: 8px; */
+    }
 
-  .cooper {
-    margin: 15px 10px;
-    /* padding: 10px 12px; */
-  }
+    .cooper {
+        margin: 15px 10px;
+        /* padding: 10px 12px; */
+    }
 
-  .title-spacer {
-    padding: 55px;
-  }
+    .title-spacer {
+        padding: 55px;
+    }
 
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    margin: 120px 30px 30px 30px;
-  }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin: 120px 30px 30px 30px;
+    }
 
-  .footer-links > a:nth-of-type(1),
-  .footer-links > a:nth-of-type(2),
-  .footer-links > a:nth-of-type(3) {
-    display: none;
-  }
+    .footer-links > a:nth-of-type(1), 
+    .footer-links > a:nth-of-type(2),
+    .footer-links > a:nth-of-type(3) {
+        display: none;
+    }
 }

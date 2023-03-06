@@ -172,4 +172,12 @@
         top: 25px;
         right: 50px;
     }
+    .menu-wrap .menu > div > div > ul {
+        left: 20px;
+    }
+    .menu-wrap .menu > div > div > ul > li {
+        font-size: 32px;
+        line-height: 1.15;
+        letter-spacing: -2px;
+    }
 }
