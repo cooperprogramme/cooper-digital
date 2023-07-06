@@ -39,6 +39,11 @@
     text-decoration: none;
 }
 
+.hyperlink {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 .module-description {
     font-size: 22px;
     line-height: 1.25;
