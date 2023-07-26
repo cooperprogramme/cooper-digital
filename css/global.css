@@ -129,7 +129,7 @@ h1 {
 
 .project-title {
     font-size: 26px;
-    line-height: 1;
+    line-height: 1.1;
     color: var(--black);
     letter-spacing: -1.25px;
     margin: 2px;
@@ -138,7 +138,7 @@ h1 {
 
 .project-detail {
     font-size: 26px;
-    line-height: 1;
+    line-height: 1.1;
     color: var(--primary-color);
     letter-spacing: -1.25px;
     margin: 2px;
