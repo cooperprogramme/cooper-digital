@@ -1,3 +1,12 @@
+$(document).ready(function() {
+  $(document).on('mousemove', function(e) {
+    $('#cursor').css({
+      left: e.pageX,
+      top: e.pageY
+    });
+  })
+});
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
