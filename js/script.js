@@ -1,10 +1,11 @@
-$(document).ready(function() {
-  $(document).on('mousemove', function(e) {
-    $('#cursor').css({
-      left: e.pageX,
-      top: e.pageY
-    });
-  })
+const cursor = document.getElementById('cursor');
+const cursorStyle = cursor.style;
+
+document.addEventListener('mousemove', e => {
+  window.requestAnimationFrame(() => {
+    cursorStyle.top = `${ e.clientY - cursor.offsetHeight/2 }px`;
+    cursorStyle.left = `${ e.clientX - cursor.offsetWidth/2 }px`;
+  });
 });
 
 var acc = document.getElementsByClassName("accordion");
