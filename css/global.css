@@ -27,21 +27,6 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
-html {
-  cursor: none;
-}
-
-#circularcursor {
-  background-color: #222222;  
-  height:30px;
-  width:30px;
-  border-radius:50%;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
-  position: absolute;
-  z-index: 1;
-}
   
 @keyframes fadeInAnimation {
     0% {
@@ -58,6 +43,18 @@ html {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    cursor: none;
+}
+
+#circularcursor {
+  background-color: #222222;  
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position: absolute;
+  z-index: 1;
 }
 
 h1 {
