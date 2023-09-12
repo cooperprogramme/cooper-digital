@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(document).on('mousemove', function(e) {
-    $('#circularcursor').css({
+    $('#cursor').css({
       left: e.pageX,
       top: e.pageY
     });
