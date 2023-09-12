@@ -44,12 +44,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-cursor:hover {
-    display: none;
+* {
+  cursor: none;
 }
 
-html {
-  cursor: none;
+cursor:hover {
+    display: none;
 }
 
 #cursor {
