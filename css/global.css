@@ -65,7 +65,6 @@ cursor:hover {
     transform ease-in 150ms;
   /* promote it to its own layer to enable  hardware accelerated rendering: */
   transform: translate3d(0, 0, 0);
-}
 }      
 
 h1 {
