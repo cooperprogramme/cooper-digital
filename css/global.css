@@ -144,6 +144,12 @@ h1 {
   background-color: #222222;
 } 
 
+.grid:hover ~ #cursor {
+  /* change size with scale() instead of width and height for better performance: */
+  transform: scale(0.5) translate3d(0, 0, 0);
+  background-color: #222222;
+} 
+
 .grid > div:hover .grid-text {
     opacity: 1;
 }
