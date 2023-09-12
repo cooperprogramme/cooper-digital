@@ -27,6 +27,17 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+html {
+  cursor: none;
+}
+#cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: blue;
+  position: absolute;
+}
   
 @keyframes fadeInAnimation {
     0% {
