@@ -46,10 +46,14 @@ body {
     cursor: none;
 }
 
+cursor:hover {
+    display: none;
+}
+
 #circularcursor {
-  background-color: #222222;  
-  height:30px;
-  width:30px;
+  background-color: #879196;  
+  height:24px;
+  width:24px;
   border-radius:50%;
   -moz-border-radius:50%;
   -webkit-border-radius:50%;
