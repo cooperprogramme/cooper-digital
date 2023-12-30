@@ -59,16 +59,16 @@
 }
 
 .quote-text {
-    margin-top: 100px;
-    margin-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 .quote-text > p {
     font-weight: 400;
-    font-size: 48px;
-    line-height: 1.075;
-    letter-spacing: -2.5px;
-    max-width: 980px;
+    font-size: 58px;
+    line-height: 1.0;
+    letter-spacing: -4px;
+    max-width: 1200px;
     color: #222222;
 }
 
