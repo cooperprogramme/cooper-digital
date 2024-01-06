@@ -220,6 +220,10 @@ h1 {
         padding: 25px 20px;
     }
 
+    #cursor {
+        display: none;
+    }   
+
     h1 {
         font-size: 32px;
         letter-spacing: -2px;
