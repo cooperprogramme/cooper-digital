@@ -6,6 +6,10 @@
     transition: all 0.4s ease;
 }
 
+* {
+    cursor:none;
+}
+
 .plus {
     fill: var(--primary-color);
     transition: all 0.4s ease;

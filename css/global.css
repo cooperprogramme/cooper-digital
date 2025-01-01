@@ -6,6 +6,7 @@
     --overlay-color: #3C3C3C;
     --white: #FFFFFF;
     --menu-speed: 0.75s;
+    cursor:none;
 }
 
 ::-moz-selection {
@@ -25,6 +26,7 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    cursor:none;
 }
   
 @keyframes fadeInAnimation {
@@ -42,10 +44,12 @@ body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    cursor:none;
 }
 
 * {
   cursor: none;
+  selector { cursor: none; }
 }
 
 cursor:hover {

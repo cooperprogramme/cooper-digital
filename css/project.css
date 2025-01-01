@@ -1,3 +1,7 @@
+* {
+    cursor:none;
+}
+
 .project-content {
     margin: 80px 30px 0px 30px;
 }

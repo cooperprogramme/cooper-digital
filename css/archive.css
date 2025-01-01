@@ -2,6 +2,10 @@
     width: fit-content;
 } */
 
+* {
+    cursor:none;
+}
+
 .project-content > div {
     margin-bottom: -8px;
 }
