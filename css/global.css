@@ -245,7 +245,17 @@ h1 {
         padding: 0px 68px;
     }
 
-    .module-detail
+    .project-title {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: -0.7px;
+    }
+    
+    .project-detail {
+        font-size: 16px;
+        line-height: 0.75;
+        letter-spacing: -0.7px;
+    }
 
     .footer-links {
         display: flex;
