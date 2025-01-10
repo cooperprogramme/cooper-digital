@@ -179,8 +179,8 @@
         left: 20px;
     }
     .menu-wrap .menu > div > div > ul > li {
-        font-size: 32px;
-        line-height: 1.15;
-        letter-spacing: -2px;
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: -3px;
     }
 }
