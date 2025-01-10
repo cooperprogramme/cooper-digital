@@ -53,9 +53,9 @@ h1 {
 @media screen and (max-width: 480px) {
 
     .module-detail {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 1.2;
-        letter-spacing: -0.8px;
+        letter-spacing: -0.7px;
     }
     .module-text {
         grid-template-columns: 1fr;

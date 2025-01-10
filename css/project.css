@@ -139,21 +139,21 @@
     }
 
     .module-title {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 1.2;
-        letter-spacing: -1px;
+        letter-spacing: -0.7px;
     }
     
     .module-detail {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 1.2;
-        letter-spacing: -1px;
+        letter-spacing: -0.7px;
     }
 
     .module-description {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 1.25;
-        letter-spacing: -1px;
+        letter-spacing: -0.7px;
     }
 
     .footer-links :nth-of-type(5) {

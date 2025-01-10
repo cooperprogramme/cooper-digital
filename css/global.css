@@ -222,6 +222,7 @@ h1 {
 @media screen and (max-width: 480px) {
     .container {
         padding: 25px 20px;
+        display: none;
     }
 
     #cursor {
@@ -229,20 +230,22 @@ h1 {
     }   
 
     h1 {
-        font-size: 32px;
-        letter-spacing: -2px;
+        font-size: 42px;
+        letter-spacing: -3px;
         max-width: 380px;
-        /* padding-left: 8px; */
     }
 
     .cooper {
         margin: 15px 10px;
-        /* padding: 10px 12px; */
+        top: 0px;
+        padding: 5px 10px;
     }
 
     .title-spacer {
         padding: 0px 68px;
     }
+
+    .module-detail
 
     .footer-links {
         display: flex;
