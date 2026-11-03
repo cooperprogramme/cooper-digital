@@ -17,37 +17,39 @@
     <link rel="shortcut icon" type="image/jpg" href="Icons/favicon1.png"/>
 </head>
 <body>
-    <div id="cursor"></div>
-    <nav>
-        <a href="index.html"><h1 class="cooper" id="cooper1">Cooper™</h1></a>
-        <div class="menu-wrap">
-            <input type="checkbox" class="toggle" onclick="myFunction()"> 
-            <div class="hamburger"><div><svg class="plus" id="plus1" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 19.9722V36.4722H19.5V19.9722H36V16.9722H19.5V0.472168H16.5V16.9722H0V19.9722H16.5Z" fill="#879196"/>
-                </svg></div></div>
-            <div class="menu">
-                <div>
+    <div id="nav-wrapper">
+        <div id="cursor"></div>
+        <nav class="overflow-hidden">
+            <a href="index.html" class="content-out-trigger nav-out-trigger"><h1 class="cooper drop-in" id="cooper1">Cooper™</h1></a>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggle" onclick="myFunction()"> 
+                <div class="hamburger drop-in"><div><svg class="plus" id="plus1" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 19.9722V36.4722H19.5V19.9722H36V16.9722H19.5V0.472168H16.5V16.9722H0V19.9722H16.5Z" fill="#879196"/>
+                    </svg></div></div>
+                <div class="menu">
                     <div>
-                        <ul>
-                            <li><a class="menu-item" href="index.html">Index</a></li>
-                            <li><a class="menu-item" href="archive.html">Archive</a></li>
-                            <li><a class="menu-item" href="profile.html">Profile</a></li>
-                            <li><a class="menu-item" href="mailto:helloacooper@gmail.com">Contact</a></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li><a class="menu-item" href="index.html">Index</a></li>
+                                <li><a class="menu-item" href="archive.html">Archive</a></li>
+                                <li><a class="menu-item" href="profile.html">Profile</a></li>
+                                <li><a class="menu-item" href="mailto:helloacooper@gmail.com">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <header>
-        <div class="container">
-            <h1><span class="title-spacer"></span>defined a unique visual identity to portray a distinct brand expression and digital experience<span class="mobile-title-hide"> for a prominent art collection</span></h1>
-        </div>
-    </header>
-    <main>
-        <div class="project-content">
+        </nav>
+        <header>
+            <div class="container overflow-hidden">
+                <h1 class="drop-in"><span class="title-spacer"></span>defined a unique visual identity to portray a distinct brand expression and digital experience<span class="mobile-title-hide"> for a prominent art collection</span></h1>
+            </div>
+        </header>
+    </div>
+    <main class="overflow-hidden">
+        <div class="project-content drop-out" id="page-wrapper">
             <div>
-                <img src="Images/Tia Collection/1.00 TC.png" alt="GlaxoSmithKline project image" class="project-image">
+                <img src="Images/Tia Collection/1.00 TC.webp" alt="Tia Collection project image" class="project-image">
                 <div class="module-text">
                     <div>
                         <p class="module-detail">Client</p>
@@ -59,9 +61,9 @@
                     </div>
                     <div>
                         <p class="module-detail">Role</p>
-                        <p class="module-title">Branding,<br>Digital Direction,<br>UX / UI</p>
+                        <p class="module-title">Branding,<br>Digital direction,<br>UX / UI</p>
                         <p class="module-detail">Category</p>
-                        <p class="module-title">Collection,<br>Artwork Loans,<br>Exhibitions</p>
+                        <p class="module-title">Collection,<br>Catalogue,<br>Artwork loans,<br>Exhibitions</p>
                     </div>
                     <p class="module-description">
                         Founded in 2007, Tia Collection is a global art collection based in Santa Fe, New Mexico, with a mission to support artists and museum institutions by acquiring and loaning works of art. Tia aims to foster dialogue, stewardship, and scholarship of art through its lending program, partner exhibitions and publications.
@@ -80,53 +82,134 @@
                 </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/2.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/2.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Tia logomark</p>
+                        <p class="caption-detail">Grid alignment and spacial relationships.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/3.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <video loop muted autoplay src="Images/Tia Collection/3.00 TC.webm" type="video/webm" alt="Tia Collection project cover image" class="cover-image"></video>
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Visible grid structure</p>
+                        <p class="caption-detail">Exposed grid marks communicate the process of storage before loaning works to museums and galleries.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/4.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <video loop muted autoplay src="Images/Tia Collection/5.00 TC.webm" type="video/webm" alt="Tia Collection project cover image" class="cover-image"></video>
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Rotating curated features</p>
+                        <p class="caption-detail">Displaying exhibits featuring works currently on loan, revealing the collection's global reach.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/5.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/4.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Identity</p>
+                        <p class="caption-detail">The logomark has a plurality of meanings, the configuration of the circles form two uppercase T's (depicting the initials of the collector's name), which also represents a patriarchal cross (portraying the family-owned collection), the individual circles represent the indian 'bindi' (dot) referencing the owners indian heritage, while the dispersal of gradient circles represents the visual field and depth.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/6.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/6.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Architecture and userflow</p>
+                        <p class="caption-detail">Mapping the journey and navigation system. Ensuring content is purposeful and inter-connected through meaningful relationships.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/7.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/7.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Tia Sans typeface</p>
+                        <p class="caption-detail">Custom drawn modern neo-grotesk font available in four styles: Regular, Italic, Display, Display Italic. The Display styles containing wider letters for impact and weight when used in marketing collateral. Featuring rounded edges to each glyph's beziers, referencing the logomark's circular shape.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/8.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/8.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Collection online</p>
+                        <p class="caption-detail">Presenting a catalogue of the entire collection online, with curated content giving a window into the works.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/9.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/9.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Searching the catalogue</p>
+                        <p class="caption-detail">Including autocomplete, filtering criteria and sort options.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/10.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <video loop muted autoplay src="Images/Tia Collection/09.01 TC.webm" type="video/webm" alt="Tia Collection project cover image" class="cover-image"></video>
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Caption templates</p>
+                        <p class="caption-detail">Mounted captions for displays of exhibited works on loan.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/11.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/10.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Responsiveness</p>
+                        <p class="caption-detail">Fully responsive and accessible digital design standards for all devices and browsers.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/12.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/11.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Artwork features</p>
+                        <p class="caption-detail">Ability for audiences to save and curate albums, share publicly, and enquire.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/13.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/12.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Artists</p>
+                        <p class="caption-detail">Alphabetical search interface for artists, contextualising the collection artists and their works.</p>
+                    </caption>
+                </div>
             </div>
             <div>
-                <img src="Images/Tia Collection/15.00 TC.png" alt="Clyfford Still Museum project image" class="project-image">
+                <img src="Images/Tia Collection/13.00 TC.webp" alt="Tia Collection project image" class="project-image">
+            </div>
+            <div>
+                <img src="Images/Tia Collection/15.00 TC.webp" alt="Tia Collection project image" class="project-image">
+                <div class="caption">
+                    <caption>
+                        <p class="caption-detail">Empowering audiences</p>
+                        <p class="caption-detail">Streamlining collection requests and curation to automate processes for staff administration.</p>
+                    </caption>
+                </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="footer-links">
-            <a href="index.html"><h1 class="footer-text">Index,</h1></a>
-            <a href="archive.html"><h1 class="footer-text">Archive,</h1></a>
-            <a href="profile.html"><h1 class="footer-text">Profile,</h1></a>
+            <a href="index.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Index,</h1></a>
+            <a href="archive.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Archive,</h1></a>
+            <a href="profile.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Profile,</h1></a>
             <a href="mailto:helloacooper@gmail.com"><h1 class="footer-text">Contact</h1></a>
-            <a class="next-project-link" href="clyfford-still-museum.html"><h1 class="next-project-text">Next project</h1>
+            <a class="next-project-link content-out-trigger nav-out-trigger" href="hrc.html"><h1 class="next-project-text">Next project</h1>
                 <svg width="43" height="36" viewBox="0 0 43 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.753905 16.0868L36.6244 16.0868L22.6851 2.14746L24.8064 0.0261373L42.3671 17.5868L24.8064 35.1475L22.6851 33.0261L36.6244 19.0868L0.753906 19.0868L0.753905 16.0868Z" fill="#222222"/>
                 </svg>
