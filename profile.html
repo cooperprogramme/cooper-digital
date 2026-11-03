@@ -18,44 +18,54 @@
     <link rel="shortcut icon" type="image/jpg" href="Icons/favicon1.png"/>
 </head>
 <body>
-    <div id="cursor"></div>
-    <nav>
-        <a href="index.html"><h1 class="cooper" id="cooper1">Cooper™</h1></a>
-        <div class="menu-wrap">
-            <input type="checkbox" class="toggle" onclick="myFunction()"> 
-            <div class="hamburger"><div><svg class="plus" id="plus1" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 19.9722V36.4722H19.5V19.9722H36V16.9722H19.5V0.472168H16.5V16.9722H0V19.9722H16.5Z" fill="#879196"/>
-                </svg></div></div>
-            <div class="menu">
-                <div>
+    <div id="nav-wrapper">
+        <div id="cursor"></div>
+        <nav class="overflow-hidden">
+            <a href="index.html" class="content-out-trigger nav-out-trigger"><h1 class="cooper drop-in" id="cooper1">Cooper™</h1></a>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggle" onclick="myFunction()"> 
+                <div class="hamburger drop-in">
                     <div>
-                        <ul>
-                            <li><a class="menu-item" href="index.html">Index</a></li>
-                            <li><a class="menu-item" href="archive.html">Archive</a></li>
-                            <li><a class="menu-item" href="profile.html">Profile</a></li>
-                            <li><a class="menu-item" href="mailto:helloacooper@gmail.com">Contact</a></li>
-                        </ul>
+                        <svg class="plus" id="plus1" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 19.9722V36.4722H19.5V19.9722H36V16.9722H19.5V0.472168H16.5V16.9722H0V19.9722H16.5Z" fill="#879196"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a class="menu-item" href="index.html">Index</a></li>
+                                <li><a class="menu-item" href="archive.html">Archive</a></li>
+                                <li><a class="menu-item" href="profile.html">Profile</a></li>
+                                <li><a class="menu-item" href="mailto:helloacooper@gmail.com">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <header>
-        <div class="container">
-            <h1><span class="title-spacer"></span>provides design direction from concept to production, capturing the dialogue between visual identity & digital experience.<span class="mobile-title-hide"></span></h1>
-        </div>
-    </header>
-    <main>
-        <div class="project-content">
+        </nav>
+        <header>
+            <div class="container overflow-hidden">
+                <h1 class="drop-in"><span class="title-spacer"></span>provides design direction from concept to production, capturing the dialogue between visual identity & digital experience<span class="mobile-title-hide"></span></h1>
+            </div>
+        </header>
+    </div>
+    <main class="overflow-hidden" id="page-wrapper">
+        <div class="project-content drop-out" id="page-wrapper">
             <div>
+                <video loop muted autoplay src="Images/Profile/profile-cover.webm" alt="Harry Ransom Center project image" class="project-image">
+            </div>
+        </div>
+        <div class="project-content drop-out">
                 <div class="module-text">
                     <div>
-                        <p class="module-detail">Biography</p>
+                        <p class="module-detail">Profile</p>
                     </div>
                     <div>
                         <p class="module-description">
-                            Alistair Cooper has been providing design services for over nine years to a host of global clients, from New York to Hong Kong. Collaborating directly with marketers, directors, audiences and developers (both internal and external). 
-                            <br><br>Planning, designing and maintaining digital ownership through functional usability testing and accessibility compliancy. Managing communication and design assets from initial conception through to post-launch maintenance.
+                            Cooper ('Ali') has been providing design services for over ten years to a host of global clients, from New York to Hong Kong. Collaborating directly with marketers, directors, audiences and developers (both internal and external). 
+                            <br><br>Planning, designing and maintaining digital ownership through functional usability testing and accessibility compliancy. Managing communication and design assets from initial conception through to post-launch maintenance. Read his <a class="hyperlink" target="_blank" href="https://keepthinking.it/ideas/integrating-digital-design-into-arts-heritage-institutions">interview</a> about integrating digital design into arts & heritage institutions.
                             <br><br>
                         </p>
                     </div>
@@ -63,12 +73,52 @@
                         <p class="module-description">
                             Guided by fundamental graphic principles and systematic design, with a ‘traditional’ design education. Cooper focuses on the essence of identity, communication, interaction and experience – initiating projects in a collaborative, agile approach to ensure clarity and consistency of message, maintaining industry standard methodologies and accessibility. 
                             <br><br>
-                            All concepts, images and content presented on this website is copyright © 2024 by Cooper, all rights reserved.
+                            All concepts, images and content presented on this website is copyright ©2026 by Cooper™ (all rights reserved).
                             <br><br>
                         </p>
                     </div>
+                </div>
+        </div>
+                <div class="project-content drop-out">
+                <div class="module-text">
                     <div>
-                        <p class="module-detail">Clients</p>
+                        <p class="module-detail">Services</p>
+                    </div>
+                    <div>
+                        <p class="module-title">
+                            UX / UI,<br>
+                            Art Direction,<br>
+                            Branding,<br>
+                            Print Design,<br>
+                            User Research,<br>
+                            Campaigns,<br>
+                            E-Commerce,<br>
+                            Consultancy,<br>
+                            Mentoring,<br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="module-title">
+                            Prototyping,<br>
+                            Design Systems,<br>
+                            Usability Testing,<br>
+                            Dev Manuals,<br>
+                            Workshops,<br>
+                            Flow Diagrams,<br>
+                            Journey Maps,<br>
+                            Interactives,<br>
+                            Apps / Websites<br>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="project-content drop-out">
+            <div>
+                <video loop muted autoplay playbackRate="0.5" src="Images/Profile/profile-logos.webm" alt="Harry Ransom Center project image" class="project-image">
+            </div>
+                <div class="module-text">
+                    <div>
+                        <p class="module-detail">Clients (38)</p>
                     </div>
                     <div>
                         <p class="module-description">
@@ -77,23 +127,30 @@
                             <br>Asia Art Archive (HK), 
                             <br>Art & the Country House (LDN), 
                             <br>British Art Studies (LDN), 
+                            <br>Buffalo AKG Art Museum (USA),
+                            <br>Burgh House (London),
                             <br>Charlie Chaplin Archive (ITL), 
                             <br>Clyfford Still Museum (USA),
                             <br>Coca-Cola Company (USA), 
                             <br>Computer History Museum (USA), 
                             <br>Dia Art Foundation (NYC), 
                             <br>Diva Museum (BE), 
+                            <br>Five College Museums (USA), 
+                            <br>Five College Consortium (USA), 
+                            <br>Fleming Collection (LDN), 
                             <br>GlaxoSmithKline (UK), 
+                            <br>Harry Ransom Center (USA), 
                             <br>Horniman Museum (LDN), 
                             <br>Kemper Art Museum (USA), 
-                            <br>Landmark Preservation (NYC), 
-                            <br>Lloyds Register (LDN), 
                             <br><br>
                         </p>
                     </div>
                     <div>
                         <p class="module-description">
-                                Media Majlis Gallery (QTR), 
+                                Landmark Preservation (NYC), 
+                            <br>Lloyds Register (LDN), 
+                            <br>Libraries Tasmania (AUS),
+                            <br>Media Majlis Gallery (QTR), 
                             <br>Menier Venues (LDN), 
                             <br>Mi'kmawey Debert Cultural Centre (CAN),
                             <br>Motown Museum (USA),  
@@ -110,6 +167,160 @@
                             <br>White Cube gallery (LDN)
                         </p>
                     </div>
+                </div>
+        </div>
+        <div class="project-content drop-out">
+            <div class="module-text">
+                    <div>
+                        <p class="module-detail">Testimonials</p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            Buffalo AKG Art Museum
+                            <br>Buffalo, New York (USA)
+                            <br><br>Natalie McGrath
+                            <br><i>Collections Database Manager <br>& Fine Art Cataloger</i> 
+                            <br><br>Kelly Carpenter
+                            <br><i>Imaging, Visual Resources, <br>and Digital Assets Manager</i> 
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            "It was an absolute pleasure to collaborate with Ali on the Buffalo AKG Art Museum's new collections microsite. He actively listened to our needs and designed a seamless, functional, and unique website. He kept our goals central to the project at all times and met every challenge with an elegant solution.
+                            <br><br>
+                             His vision, fresh ideas, enthusiasm, and positivity were contagious. We cannot wait to share the new portal for our online visitors to explore!"
+                            <br><br>
+                        </p>
+                    </div>
+            </div>
+            <div class="module-text">
+                    <div>
+                        <p class="module-detail"></p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            Clyfford Still Museum
+                            <br>Denver, Colarado (USA)
+                            <br><br>Bailey Placzak
+                            <br><i>Curator of collections & catalogue raisonné research and project manager</i> 
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            "Since its inception in 2011, the Clyfford Still Museum in Denver, Colorado, has worked to catalog and research Still’s vast collections of art and archival materials to make the artist’s oeuvre visible and widely accessible to a broad public. Clyfford Still Online represents the culmination of those efforts. 
+                            <br><br>
+                            During our work together on this project, Ali recognized the significance of this moment and dove right into the Still universe. His vision for the system not only realizes our goal to create an innovative digital platform that encourages deep engagement with Still’s life and art; but it also makes possible the holistic experience Still hoped viewers would have his work in a way that he could not possibly have imagined during his lifetime."
+                            <br><br>
+                        </p>
+                    </div>
+            </div>
+            <div class="module-text">
+                    <div>
+                        <p class="module-detail"></p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            Computer History Museum
+                            <br>San Francisco, California (USA)
+                            <br><br>Massimo Petrozzi
+                            <br><i>Director of Archives & Digital Initiatives</i> 
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            "It has been a pleasure to work with Ali. While designing our new online collection, not only he provided innovative solutions, but he also promptly addressed our feedback. I also appreciated his ability to address our needs without sacrificing his vision for the website. Thank you for all your work on the collection online...it's looks amazing” 
+                            <br><br>
+                        </p>
+                    </div>
+            </div>
+            <div class="module-text">
+                    <div>
+                        <p class="module-detail"></p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            Unilever
+                            <br>Liverpool, England (UK)
+                            <br><br>Nicola Hubberstey
+                            <br><i>Archivist & Records Manager</i> 
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            "Ali, congratulations on your 10th anniversary at Keepthinking, what a remarkable milestone. Collaborating on the Unilever Archives website was an absolute pleasure, and you were a master at understanding my thoughts and turning them into a working masterpiece. Your innovative approach and meticulous attention to detail brought the project to life, turning our historical data into an engaging and user-friendly experience. I look forward to working with you and seeing the incredible designs you will continue to create in the future. Congratulations, here’s to another 10 years of creativity, collaboration, and innovation."
+                            <br><br>
+                        </p>
+                    </div>
+            </div>
+            <div class="module-text">
+                    <div>
+                        <p class="module-detail"></p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            Five College Museums
+                            <br>Boston, Massachusets (USA)
+                            <br><br>Jen Phoenix
+                            <br><i>Museum Collections Information Manager</i> 
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            "Ali is not only a joy to work with, he is extremely nimble with implementing feedback and translating it into elegant and functional design. He stepped into a tall order with this project, being a site-build for a consortium of 6 museums with diverse collections, and each with their own brand identity. He was able to translate our design brief into the framework, aesthetic, and functionality of the site. I think it is fair to say that we were all dazzled by how it has come together. Bravo!"
+                            <br><br>
+                        </p>
+                    </div>
+            </div>
+            <div class="module-text">
+                    <div>
+                        <p class="module-detail"></p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            GlaxoSmithKline
+                            <br>London, England (UK)
+                            <br><br>Jill Moretto 
+                            <br><i>Director, Global Information Governance Operations </i> 
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            "Working with Ali on the GSK Heritage internal website has been an absolute pleasure. I’ve been consistently impressed by his eye for design and his ability to work seamlessly within our detailed brand guidelines. The resulting web pages are not only visually striking but also intuitive and deeply respectful of the stories they help me to tell. It’s been a rewarding collaboration, and I’m thrilled with what we’ve achieved together."
+                            <br><br>
+                        </p>
+                    </div>
+            </div>
+            <div class="module-text">
+                    <div>
+                        <p class="module-detail"></p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            Western Carolina University
+                            <br>Cullowhee, North Carolina (USA)
+                            <br><br>Kellen Carpenter
+                            <br><i>Digital Scholarship Librarian and Assistant Professor</i> 
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="module-description">
+                            "With far too many strong and often-conflicting visions trying to shape the design, you provided a guiding and mediating voice who managed to take all these disparate viewpoints and come up with a design that was universally loved by our team. Every step of the way you gave us options, gave honest appraisals of the different approaches we could take, and helped us visualize alternatives. We get compliments on the website regularly and on several occasions, I have gotten cold emails from other institutions simply wanting to compliment how beautiful our website looks (and then to inevitably ask how we did it).
+                            <br><br>
+                            Even after our initial go-live date, Ali was a capable and eager collaborator in additional developments and upgrades to the site, some of which were far from straightforward. All of these follow-up projects were handled with the same attention and care as the site launch, and Ali's ability to turn our sometimes very specific ideas into something both beautiful and functional, is a testament to not just his skills as a designer but his effectiveness as a communicator and collaborator."
+                            <br><br>
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <!-- <div class="project-content">
+                <div class="module-text">
                     <div>
                         <p class="module-detail">Experience</p>
                     </div>
@@ -137,7 +348,7 @@
                         <p class="module-title">
                             Graphic Communication<br>
                             BA (Hons) Degree, <br>
-                            London College of Communication
+                            London College of Communication<br>
                             (University of the Arts London)<br>
                         </p>
                     </div>
@@ -156,9 +367,9 @@
                         <p class="module-title">
                             UX / UI<br>
                             Art Direction<br>
+                            Branding<br>
                             Graphic Design<br>
                             HTML / CSS<br>
-                            Branding<br>
                         </p>
                     </div>
                     <div>
@@ -176,10 +387,12 @@
                     <div>
                         <p class="module-title">
                             Figma<br>
-                            Sketch<br>
+                            Claude<br>
                             Photoshop<br>
                             Illustrator<br>
                             Indesign<br>
+                            Affinity<br>
+                            Sketch<br>
                         </p>
                     </div>
                     <div>
@@ -189,18 +402,256 @@
                             Basecamp<br>
                             VS Code<br>
                             Github<br>
+                            Glyphs<br>
                         </p>
                     </div>
                 </div>
-                <!-- <img src="Images/Profile/profile-image.png" alt="Kemper Art Musueum project cover image"class="project-image"> -->
+        </div> -->
+        <!-- <div class="project-content drop-out">
+            <div>
+                <p class="accordion-header">Process</p>
             </div>
-        </div>
+            <hr class="solid">
+            <button class="accordion">
+                    <div class="title">Analysis</div>
+                    <div class="date">01</div>
+            </button>
+            <div class="panel">
+                <div class="accordion-text">
+                    <div>
+                        <p class="accordion-detail">Client</p>
+                        <p class="accordion-title">Clyfford Still Museum</p>
+                        <p class="accordion-detail">Year</p>
+                        <p class="accordion-title">2025</p>
+                        <p class="accordion-detail">Location</p>
+                        <p class="accordion-title">Denver<br>(USA)</p>
+                    </div>
+                    <div>
+                        <p class="accordion-detail">Role</p>
+                        <p class="accordion-title">Digital Identity,<br>Content Strategy,<br>UX / UI</p>
+                        <p class="accordion-detail">Category</p>
+                        <p class="accordion-title">Museum,<br>Archive,<br>Collection</p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            The Clyfford Still Museum in Denver, Colorado, is a unique cultural institution dedicated exclusively to the life and work of the influential Abstract Expressionist artist Clyfford Still. The museum houses approximately 95% of Still's total output, featuring over 3,000 works including paintings, drawings, and archival materials.
+                            <br><br>
+                            Clyfford Still Museum had been using the 'Qi' CMS to provide software and support for their collection management, the museum approached us to bring their collections online to the public, aiming to be a virtual extension of the physical museum exhibitions and a space for educating the public through connecting and contextualising materials. 
+                            <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            My role as Art Director involved leading the digital strategy and production for bringing this new portal to the public. I travelled to Denver to deliver a three day workshop with the museum's staff focusing on content structure and visual design through information architecture, wireframe prototyping and drafting the the art direction.
+                            <br><br>
+                            The iterative process ensured content and connections appropriately matched the data available in their system. We crafted mutliple routes for audiences including 'spotlight' articles, visual maps, 'three-dimensional' immersive timelines and the ability for users to 'create their own collections' and share them.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="solid">
+            <button class="accordion">
+                    <div class="title">Architecture</div>
+                    <div class="date">02</div>
+            </button>
+            <div class="panel">
+                <div class="accordion-text">
+                    <div>
+                        <p class="accordion-detail">Client</p>
+                        <p class="accordion-title">Clyfford Still Museum</p>
+                        <p class="accordion-detail">Year</p>
+                        <p class="accordion-title">2025</p>
+                        <p class="accordion-detail">Location</p>
+                        <p class="accordion-title">Denver<br>(USA)</p>
+                    </div>
+                    <div>
+                        <p class="accordion-detail">Role</p>
+                        <p class="accordion-title">Digital Identity,<br>Content Strategy,<br>UX / UI</p>
+                        <p class="accordion-detail">Category</p>
+                        <p class="accordion-title">Museum,<br>Archive,<br>Collection</p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            The Clyfford Still Museum in Denver, Colorado, is a unique cultural institution dedicated exclusively to the life and work of the influential Abstract Expressionist artist Clyfford Still. The museum houses approximately 95% of Still's total output, featuring over 3,000 works including paintings, drawings, and archival materials.
+                            <br><br>
+                            Clyfford Still Museum had been using the 'Qi' CMS to provide software and support for their collection management, the museum approached us to bring their collections online to the public, aiming to be a virtual extension of the physical museum exhibitions and a space for educating the public through connecting and contextualising materials. 
+                            <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            My role as Art Director involved leading the digital strategy and production for bringing this new portal to the public. I travelled to Denver to deliver a three day workshop with the museum's staff focusing on content structure and visual design through information architecture, wireframe prototyping and drafting the the art direction.
+                            <br><br>
+                            The iterative process ensured content and connections appropriately matched the data available in their system. We crafted mutliple routes for audiences including 'spotlight' articles, visual maps, 'three-dimensional' immersive timelines and the ability for users to 'create their own collections' and share them.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="solid">
+            <button class="accordion">
+                    <div class="title">Direction</div>
+                    <div class="date">03</div>
+            </button>
+            <div class="panel">
+                <div class="accordion-text">
+                    <div>
+                        <p class="accordion-detail">Client</p>
+                        <p class="accordion-title">Clyfford Still Museum</p>
+                        <p class="accordion-detail">Year</p>
+                        <p class="accordion-title">2025</p>
+                        <p class="accordion-detail">Location</p>
+                        <p class="accordion-title">Denver<br>(USA)</p>
+                    </div>
+                    <div>
+                        <p class="accordion-detail">Role</p>
+                        <p class="accordion-title">Digital Identity,<br>Content Strategy,<br>UX / UI</p>
+                        <p class="accordion-detail">Category</p>
+                        <p class="accordion-title">Museum,<br>Archive,<br>Collection</p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            The Clyfford Still Museum in Denver, Colorado, is a unique cultural institution dedicated exclusively to the life and work of the influential Abstract Expressionist artist Clyfford Still. The museum houses approximately 95% of Still's total output, featuring over 3,000 works including paintings, drawings, and archival materials.
+                            <br><br>
+                            Clyfford Still Museum had been using the 'Qi' CMS to provide software and support for their collection management, the museum approached us to bring their collections online to the public, aiming to be a virtual extension of the physical museum exhibitions and a space for educating the public through connecting and contextualising materials. 
+                            <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            My role as Art Director involved leading the digital strategy and production for bringing this new portal to the public. I travelled to Denver to deliver a three day workshop with the museum's staff focusing on content structure and visual design through information architecture, wireframe prototyping and drafting the the art direction.
+                            <br><br>
+                            The iterative process ensured content and connections appropriately matched the data available in their system. We crafted mutliple routes for audiences including 'spotlight' articles, visual maps, 'three-dimensional' immersive timelines and the ability for users to 'create their own collections' and share them.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="solid">
+            <button class="accordion">
+                    <div class="title">Prototyping</div>
+                    <div class="date">04</div>
+            </button>
+            <div class="panel">
+                <div class="accordion-text">
+                    <div>
+                        <p class="accordion-detail">Client</p>
+                        <p class="accordion-title">Clyfford Still Museum</p>
+                        <p class="accordion-detail">Year</p>
+                        <p class="accordion-title">2025</p>
+                        <p class="accordion-detail">Location</p>
+                        <p class="accordion-title">Denver<br>(USA)</p>
+                    </div>
+                    <div>
+                        <p class="accordion-detail">Role</p>
+                        <p class="accordion-title">Digital Identity,<br>Content Strategy,<br>UX / UI</p>
+                        <p class="accordion-detail">Category</p>
+                        <p class="accordion-title">Museum,<br>Archive,<br>Collection</p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            The Clyfford Still Museum in Denver, Colorado, is a unique cultural institution dedicated exclusively to the life and work of the influential Abstract Expressionist artist Clyfford Still. The museum houses approximately 95% of Still's total output, featuring over 3,000 works including paintings, drawings, and archival materials.
+                            <br><br>
+                            Clyfford Still Museum had been using the 'Qi' CMS to provide software and support for their collection management, the museum approached us to bring their collections online to the public, aiming to be a virtual extension of the physical museum exhibitions and a space for educating the public through connecting and contextualising materials. 
+                            <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            My role as Art Director involved leading the digital strategy and production for bringing this new portal to the public. I travelled to Denver to deliver a three day workshop with the museum's staff focusing on content structure and visual design through information architecture, wireframe prototyping and drafting the the art direction.
+                            <br><br>
+                            The iterative process ensured content and connections appropriately matched the data available in their system. We crafted mutliple routes for audiences including 'spotlight' articles, visual maps, 'three-dimensional' immersive timelines and the ability for users to 'create their own collections' and share them.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="solid">
+            <button class="accordion">
+                    <div class="title">Iteration</div>
+                    <div class="date">05</div>
+            </button>
+            <div class="panel">
+                <div class="accordion-text">
+                    <div>
+                        <p class="accordion-detail">Client</p>
+                        <p class="accordion-title">Clyfford Still Museum</p>
+                        <p class="accordion-detail">Year</p>
+                        <p class="accordion-title">2025</p>
+                        <p class="accordion-detail">Location</p>
+                        <p class="accordion-title">Denver<br>(USA)</p>
+                    </div>
+                    <div>
+                        <p class="accordion-detail">Role</p>
+                        <p class="accordion-title">Digital Identity,<br>Content Strategy,<br>UX / UI</p>
+                        <p class="accordion-detail">Category</p>
+                        <p class="accordion-title">Museum,<br>Archive,<br>Collection</p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            The Clyfford Still Museum in Denver, Colorado, is a unique cultural institution dedicated exclusively to the life and work of the influential Abstract Expressionist artist Clyfford Still. The museum houses approximately 95% of Still's total output, featuring over 3,000 works including paintings, drawings, and archival materials.
+                            <br><br>
+                            Clyfford Still Museum had been using the 'Qi' CMS to provide software and support for their collection management, the museum approached us to bring their collections online to the public, aiming to be a virtual extension of the physical museum exhibitions and a space for educating the public through connecting and contextualising materials. 
+                            <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            My role as Art Director involved leading the digital strategy and production for bringing this new portal to the public. I travelled to Denver to deliver a three day workshop with the museum's staff focusing on content structure and visual design through information architecture, wireframe prototyping and drafting the the art direction.
+                            <br><br>
+                            The iterative process ensured content and connections appropriately matched the data available in their system. We crafted mutliple routes for audiences including 'spotlight' articles, visual maps, 'three-dimensional' immersive timelines and the ability for users to 'create their own collections' and share them.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="solid">
+            <button class="accordion">
+                    <div class="title">Production</div>
+                    <div class="date">06</div>
+            </button>
+            <div class="panel">
+                <div class="accordion-text">
+                    <div>
+                        <p class="accordion-detail">Client</p>
+                        <p class="accordion-title">Clyfford Still Museum</p>
+                        <p class="accordion-detail">Year</p>
+                        <p class="accordion-title">2025</p>
+                        <p class="accordion-detail">Location</p>
+                        <p class="accordion-title">Denver<br>(USA)</p>
+                    </div>
+                    <div>
+                        <p class="accordion-detail">Role</p>
+                        <p class="accordion-title">Digital Identity,<br>Content Strategy,<br>UX / UI</p>
+                        <p class="accordion-detail">Category</p>
+                        <p class="accordion-title">Museum,<br>Archive,<br>Collection</p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            The Clyfford Still Museum in Denver, Colorado, is a unique cultural institution dedicated exclusively to the life and work of the influential Abstract Expressionist artist Clyfford Still. The museum houses approximately 95% of Still's total output, featuring over 3,000 works including paintings, drawings, and archival materials.
+                            <br><br>
+                            Clyfford Still Museum had been using the 'Qi' CMS to provide software and support for their collection management, the museum approached us to bring their collections online to the public, aiming to be a virtual extension of the physical museum exhibitions and a space for educating the public through connecting and contextualising materials. 
+                            <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="accordion-description">
+                            My role as Art Director involved leading the digital strategy and production for bringing this new portal to the public. I travelled to Denver to deliver a three day workshop with the museum's staff focusing on content structure and visual design through information architecture, wireframe prototyping and drafting the the art direction.
+                            <br><br>
+                            The iterative process ensured content and connections appropriately matched the data available in their system. We crafted mutliple routes for audiences including 'spotlight' articles, visual maps, 'three-dimensional' immersive timelines and the ability for users to 'create their own collections' and share them.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </main>
     <footer>
         <div class="footer-links">
-            <a href="index.html"><h1 class="footer-text">Index,</h1></a>
-            <a href="archive.html"><h1 class="footer-text">Archive,</h1></a>
-            <a href="profile.html"><h1 class="footer-text">Profile,</h1></a>
+            <a href="index.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Index,</h1></a>
+            <a href="archive.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Archive,</h1></a>
+            <a href="profile.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Profile,</h1></a>
             <a href="mailto:helloacooper@gmail.com"><h1 class="footer-text">Contact</h1></a>
         </div>
     </footer>
