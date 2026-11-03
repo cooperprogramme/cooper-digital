@@ -6,6 +6,11 @@
     margin-bottom: -8px;
 }
 
+body {
+    background-color: #000000;
+    cursor:none;
+}
+
 .accordion {
     background-color: #000000;
     color: var(--white);
@@ -16,6 +21,14 @@
     transition: 0.4s;
 }
 
+h1 {
+    color: var(--white);
+}
+
+.cooper:hover {
+    color: var(--white);
+}
+
 hr.solid {
     border-top: 0.25px solid var(--primary-color);
     margin-bottom: 12px;
@@ -23,7 +36,6 @@ hr.solid {
 }
   
 .panel {
-    background-color: #000000;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -34,18 +46,25 @@ hr.solid {
     font-family: 'Work Sans', sans-serif;
     font-size: 58px;
     line-height: 1.0;
-    letter-spacing: -4px;
+    letter-spacing: -4.5px;
     display: flex;
     justify-content: space-between;
 }
 
 .accordion :nth-child(2) {
     justify-self: flex-end;
-
 }
 
 .date {
+    font-size: 58px;
+    line-height: 1.0;
+    letter-spacing: -4.5px;
     margin-left: auto;
+    /* margin-bottom: -30px; */
+}
+
+.module-title {
+    color: var(--white);
 }
 
 .module-text {
@@ -63,14 +82,18 @@ hr.solid {
     text-decoration: none;
 }
 
+.module-description {
+    color: var(--white);
+}
+
 @media screen and (max-width: 480px) {
     .title {
         font-size: 26px;
-        letter-spacing: -1.25px;
+        letter-spacing: -1.2px;
     }
     .date {
         font-size: 26px;
-        letter-spacing: -1.25px;
+        letter-spacing: -1.2px;
         margin-left: 10px;
     }
     .module-detail {
