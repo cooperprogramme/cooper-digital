@@ -12,52 +12,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Cooper</title>
     <link rel="shortcut icon" type="image/jpg" href="Icons/favicon1.png"/>
 </head>
-<body>
-    <div id="cursor"></div>
-    <nav>
-        <a href="index.html"><h1 class="cooper" id="cooper1">Cooper™</h1></a>
-        <div class="menu-wrap">
-            <input type="checkbox" class="toggle" onclick="myFunction()"> 
-            <div class="hamburger"><div><svg class="plus" id="plus1" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 19.9722V36.4722H19.5V19.9722H36V16.9722H19.5V0.472168H16.5V16.9722H0V19.9722H16.5Z" fill="#879196"/>
-                </svg></div></div>
-            <div class="menu">
-                <div>
+<body onload="changeText()">
+    <div id="nav-wrapper">
+        <div id="cursor"></div>
+        <nav class="overflow-hidden">
+            <a href="index.html" class="content-out-trigger nav-out-trigger"><h1 class="cooper drop-in" id="cooper1">Cooper™</h1></a>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggle" onclick="myFunction()"> 
+                <div class="hamburger drop-in"><div><svg class="plus" id="plus1" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 19.9722V36.4722H19.5V19.9722H36V16.9722H19.5V0.472168H16.5V16.9722H0V19.9722H16.5Z" fill="#879196"/>
+                    </svg></div></div>
+                <div class="menu">
                     <div>
-                        <ul>
-                            <li><a class="menu-item" href="index.html">Index</a></li>
-                            <li><a class="menu-item" href="archive.html">Archive</a></li>
-                            <li><a class="menu-item" href="profile.html">Profile</a></li>
-                            <li><a class="menu-item" href="mailto:helloacooper@gmail.com">Contact</a></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li><a class="menu-item" href="index.html">Index</a></li>
+                                <li><a class="menu-item" href="archive.html">Archive</a></li>
+                                <li><a class="menu-item" href="profile.html">Profile</a></li>
+                                <li><a class="menu-item" href="mailto:helloacooper@gmail.com">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <header>
-        <div class="container">
-            <h1><span class="title-spacer"></span>– digital art director producing dynamic identities for global organisations<span class="mobile-title-hide">, focusing on interaction & experience</span></h1>
-        </div>
-    </header>
-    <main>
-        <div class="grid">
+        </nav>
+        <header>
+            <div class="container overflow-hidden">
+                <h1 class="drop-in"><span class="title-spacer"></span><span id="change"></span></h1>
+            </div>
+        </header>
+    </div>
+    <main class="overflow-hidden">
+        <div class="grid drop-out" id="page-wrapper">
             <div>
-                <a href="tia-collection.html">
-                    <img src="Images/Project Cover/Tia-Cover.png" alt="Kemper Art Musueum project cover image" class="cover-image">
+                <a href="tia-collection.html" class="content-out-trigger nav-out-trigger">
+                    <video loop muted autoplay src="Images/Project Cover/Tia-Cover.webm" type="video/webm" alt="Tia project cover image" class="cover-image"></video>
                     <div class="grid-text">
                         <p class="project-title">Tia Collection®</p>
                         <p class="project-detail">Branding & Digital</p>
-                        <i class="project-detail">2025 (Santa Fe)</i>
+                        <i class="project-detail">2026 (Santa Fe)</i>
                     </div>
                 </a>
             </div>
             <div>
-                <a href="clyfford-still-museum.html">
-                    <img src="Images/Clyfford Still Museum/1.00 CSM.png" alt="Menier Venues project cover image" class="cover-image">
+                <a href="hrc.html" class="content-out-trigger nav-out-trigger">
+                    <video loop muted autoplay src="Images/Project Cover/hrc-cover-1.webm" type="video/webm" alt="Harry Ransom Center image" class="cover-image"></video>
+                    <!-- <img src="Images/Project Cover/hrc-cover-2.png" alt="Harry Ransom Center project cover image" class="cover-image"> -->
+                    <div class="grid-text">
+                        <p class="project-title">Harry Ransom Center</p>
+                        <p class="project-detail">Digital Identity</p>
+                        <i class="project-detail">2026 (Texas)</i>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="5c.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/5c Cover.webp" alt="Five College Museums project cover image" class="cover-image">
+                    <div class="grid-text">
+                        <p class="project-title">Five College Museums</p>
+                        <p class="project-detail">Digital Identity</p>
+                        <i class="project-detail">2026 (Boston)</i>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="dia.html" class="content-out-trigger nav-out-trigger">
+                    <video loop muted autoplay src="Images/Project Cover/Dia-Cover-02.webm" type="video/webm" alt="Dia Art Foundation project cover image" class="cover-image"></video>
+                    <div class="grid-text">
+                        <p class="project-title">Dia Art Foundation</p>
+                        <p class="project-detail">Digital Identity</p>
+                        <i class="project-detail">2026 (New York)</i>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="chm.html" class="content-out-trigger nav-out-trigger">
+                    <video loop muted autoplay src="Images/Project Cover/chm-cover.webm" type="video/webm" alt="Computer History Museum project cover image" class="cover-image"></video>
+                    <div class="grid-text">
+                        <p class="project-title">Computer History Museum</p>
+                        <p class="project-detail">Digital Identity</p>
+                        <i class="project-detail">2025 (San Francisco)</i>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="akg.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/AKG Museum/0.00 AKG.webp" alt="Buffalo AKG Art Museum project cover image" class="cover-image">
+                    <div class="grid-text">
+                        <p class="project-title">Buffalo AKG Art Museum</p>
+                        <p class="project-detail">Digital Identity</p>
+                        <i class="project-detail">2026 (Buffalo)</i>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="clyfford-still-museum.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Clyfford Still Museum/1.00 CSM.webp" alt="Clyfford Still Museum project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">Clyfford Still Museum</p>
                         <p class="project-detail">Digital Identity</p>
@@ -66,38 +120,8 @@
                 </a>
             </div>
             <div>
-                <a href="kemper-art-museum.html">
-                    <img src="Images/Project Cover/kemper-cover.jpg" alt="Kemper Art Musueum project cover image" class="cover-image">
-                    <div class="grid-text">
-                        <p class="project-title">Mildred Lane <br>Kemper Art Museum</p>
-                        <p class="project-detail">Digital Identity</p>
-                        <i class="project-detail">2023 (Missouri)</i>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="menier-venues.html">
-                    <img src="Images/Project Cover/menier-venues-cover.gif" alt="Menier Venues project cover image" class="cover-image">
-                    <div class="grid-text">
-                        <p class="project-title">Menier Venues®</p>
-                        <p class="project-detail">Branding & Digital</p>
-                        <i class="project-detail">2021 (London)</i>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="keepthinking.html">
-                    <img src="Images/Project Cover/kt-cover.gif" alt="Keepthinking project cover image" class="cover-image">
-                    <div class="grid-text">
-                        <p class="project-title">Keepthinking®</p>
-                        <p class="project-detail">Digital Identity</p>
-                        <i class="project-detail">2025 (London)</i>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="coca-cola.html">
-                    <img src="Images/Project Cover/coca-cola-cover.png" alt="Coca-Cola project cover image" class="cover-image">
+                <a href="coca-cola.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/coca-cola-cover.webp" alt="Coca-Cola project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">Coca-Cola® <br>Heritage Center</p>
                         <p class="project-detail">Digital Identity</p>
@@ -106,8 +130,38 @@
                 </a>
             </div>
             <div>
-                <a href="ps-basic.html">
-                    <img src="Images/PS Basic/1.00.png" alt="PS Basic project cover image" class="cover-image">
+                <a href="kemper-art-museum.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/kemper-cover.webp" alt="Kemper Art Musueum project cover image" class="cover-image">
+                    <div class="grid-text">
+                        <p class="project-title">Mildred Lane <br>Kemper Art Museum</p>
+                        <p class="project-detail">Digital Identity</p>
+                        <i class="project-detail">2023 (Missouri)</i>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="menier-venues.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/menier-venues-cover.webp" alt="Menier Venues project cover image" class="cover-image">
+                    <div class="grid-text">
+                        <p class="project-title">Menier Venues®</p>
+                        <p class="project-detail">Branding & Digital</p>
+                        <i class="project-detail">2021 (London)</i>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="keepthinking.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/kt-cover.webp" alt="Keepthinking project cover image" class="cover-image">
+                    <div class="grid-text">
+                        <p class="project-title">Keepthinking®</p>
+                        <p class="project-detail">Digital Identity</p>
+                        <i class="project-detail">2025 (London)</i>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="ps-basic.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/PS Basic/1.00.webp" alt="PS Basic project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">PS Basic™ (1200)</p>
                         <p class="project-detail">Typographic System</p>
@@ -116,8 +170,8 @@
                 </a>
             </div>
             <div>
-                <a href="portal.html">
-                    <video loop muted autoplay src="Images/Project Cover/portal-cover.mp4" type="video/mp4" alt="Portal project cover video" class="cover-image"></video>
+                <a href="portal.html" class="content-out-trigger nav-out-trigger">
+                    <video loop muted autoplay src="Images/Project Cover/portal-cover.webm" type="video/webm" alt="Portal project cover video" class="cover-image"></video>
                     <div class="grid-text">
                         <p class="project-title">Portal™</p>
                         <p class="project-detail">Brand & Digital</p>
@@ -126,8 +180,8 @@
                 </a>
             </div>
             <div>
-                <a href="gsk.html">
-                    <video loop muted autoplay src="Images/Project Cover/GSK_CS_03.mp4" type="video/mp4" alt="GlaxoSmithKline project cover image" class="cover-image"></video>
+                <a href="gsk.html" class="content-out-trigger nav-out-trigger">
+                    <video loop muted autoplay src="Images/Project Cover/GSK_CS_03.webm" type="video/webm" alt="GlaxoSmithKline project cover image" class="cover-image"></video>
                     <div class="grid-text">
                         <p class="project-title">GlaxoSmithKline® <br>Heritage Archives</p>
                         <p class="project-detail">Digital Identity</p>
@@ -136,8 +190,8 @@
                 </a>
             </div>
             <div>
-                <a href="mdcc.html">
-                    <img src="Images/Project Cover/mdcc.png" alt="MDCC project cover image" class="cover-image">
+                <a href="mdcc.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/mdcc.webp" alt="MDCC project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">Mi’kmawey Debert <br>Cultural Centre</p>
                         <p class="project-detail">Digital Identity</p>
@@ -146,8 +200,8 @@
                 </a>
             </div>
             <div>
-                <a href="asia-art-archive.html">
-                    <img src="Images/Project Cover/AAA-Cover.png" alt="Asia Art Archive project cover image" class="cover-image">
+                <a href="asia-art-archive.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/AAA-Cover.webp" alt="Asia Art Archive project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">Asia Art Archive</p>
                         <p class="project-detail">Digital Identity</p>
@@ -156,18 +210,8 @@
                 </a>
             </div>
             <div>
-                <a href="diva-museum.html">
-                    <img src="Images/Project Cover/DIVA-Cover.png" alt="DIVA Museum project cover image" class="cover-image">
-                    <div class="grid-text">
-                        <p class="project-title">Diva Museum</p>
-                        <p class="project-detail">Digital Identity</p>
-                        <i class="project-detail">2017-23 (Antwerp)</i>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="western-carolina-university.html">
-                    <img src="Images/Western Carolina University/00 WCU.png" alt="Western Carolina University project cover image" class="cover-image">
+                <a href="western-carolina-university.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Western Carolina University/00 WCU.webp" alt="Western Carolina University project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">Western Carolina <br>University</p>
                         <p class="project-detail">Digital Identity</p>
@@ -176,8 +220,8 @@
                 </a>
             </div>
             <div>
-                <a href="unilever.html">
-                    <img src="Images/Project Cover/Unilever-Cover-2.png" alt="Unilever Archive project cover image" class="cover-image">
+                <a href="unilever.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/Unilever-Cover-2.webp" alt="Unilever Archive project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">Unilever® Archive</p>
                         <p class="project-detail">UX/UI & Direction</p>
@@ -186,8 +230,8 @@
                 </a>
             </div>
             <div>
-                <a href="tagger.html">
-                    <img src="Images/Project Cover/Tagger-Cover-01.png" alt="ArtUK Tagger project cover image" class="cover-image">
+                <a href="tagger.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Project Cover/Tagger-Cover-01.webp" alt="ArtUK Tagger project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">ArtUK Tagger</p>
                         <p class="project-detail">UX, UI & Direction</p>
@@ -196,8 +240,8 @@
                 </a>
             </div>
             <div>
-                <a href="sainsburys-archive.html">
-                    <img src="Images/Sainsbury's Archive/00 Sainsbury's Archive.png" alt="Sainsburys Archive project cover image" class="cover-image">
+                <a href="sainsburys-archive.html" class="content-out-trigger nav-out-trigger">
+                    <img src="Images/Sainsbury's Archive/00 Sainsbury's Archive.webp" alt="Sainsburys Archive project cover image" class="cover-image">
                     <div class="grid-text">
                         <p class="project-title">Sainsbury's Archive</p>
                         <p class="project-detail">UX, UI & Direction</p>
@@ -209,9 +253,9 @@
     </main>
     <footer>
         <div class="footer-links">
-            <a href="index.html"><h1 class="footer-text">Index,</h1></a>
-            <a href="archive.html"><h1 class="footer-text">Archive,</h1></a>
-            <a href="profile.html"><h1 class="footer-text">Profile,</h1></a>
+            <a href="index.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Index,</h1></a>
+            <a href="archive.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Archive,</h1></a>
+            <a href="profile.html" class="content-out-trigger nav-out-trigger"><h1 class="footer-text">Profile,</h1></a>
             <a href="mailto:helloacooper@gmail.com"><h1 class="footer-text">Contact</h1></a>
         </div>
     </footer>
