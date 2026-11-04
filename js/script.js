@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // Reset page animations when returning via browser Back/Forward
 window.addEventListener("pageshow", function () {
 
