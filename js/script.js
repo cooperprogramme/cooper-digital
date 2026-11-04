@@ -92,3 +92,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//Animating the page nav out on-click.
+window.addEventListener("pageshow", function (event) {
+    // Reset the page when returning via browser back/forward
+    document.body.classList.remove("fade-out");
+
+    // Ensure the page is visible again
+    document.body.style.opacity = "1";
+    document.body.style.visibility = "visible";
+});
