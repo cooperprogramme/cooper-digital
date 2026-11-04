@@ -93,12 +93,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//Animating the page nav out on-click.
-window.addEventListener("pageshow", function (event) {
-    // Reset the page when returning via browser back/forward
-    document.body.classList.remove("fade-out");
 
-    // Ensure the page is visible again
-    document.body.style.opacity = "1";
-    document.body.style.visibility = "visible";
+// Reset page animations when returning via browser Back/Forward
+window.addEventListener("pageshow", function () {
+
+    const pageWrapper = document.getElementById("page-wrapper");
+    const navWrapper = document.getElementById("nav-wrapper");
+
+    // Reset the main content animation
+    if (pageWrapper) {
+        pageWrapper.classList.remove("content-out-active");
+    }
+
+    // Reset the navigation animation
+    if (navWrapper) {
+        navWrapper.classList.remove("nav-out-active");
+    }
+
 });
