@@ -110,3 +110,112 @@ window.addEventListener("pageshow", function () {
     }
 
 });
+
+
+// Global video controls
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Inject styling once.
+    if (!document.getElementById("global-video-controls-style")) {
+        const style = document.createElement("style");
+        style.id = "global-video-controls-style";
+
+        style.textContent = `
+            .video-text-controls {
+                display: inline-flex;
+                align-items: baseline;
+                gap: 12px;
+                color: var(--primary-color);
+            }
+
+            .video-text-controls button {
+                appearance: none;
+                -webkit-appearance: none;
+                border: none;
+                padding: 0;
+                margin: 0;
+                background: none;
+                font: inherit;
+                color: #a0a9ae;
+                cursor: none;
+                text-align: left;
+                letter-spacing: -0.8px;
+            }
+
+            .video-text-controls button:focus-visible {
+                outline: 1px solid currentColor;
+                outline-offset: 3px;
+            }
+        `;
+
+        document.head.appendChild(style);
+    }
+
+    // Find every video.
+    document.querySelectorAll("video").forEach(video => {
+
+        if (video.dataset.textControlsAdded === "true") return;
+
+        const caption = video.parentElement.querySelector(".caption");
+
+        if (!caption) return;
+
+        // Find the first caption-detail paragraph.
+        const leftCaption = caption.querySelector(".caption-detail");
+
+        if (!leftCaption) return;
+
+        video.dataset.textControlsAdded = "true";
+
+        // Create controls.
+        const controls = document.createElement("span");
+        controls.className = "video-text-controls";
+
+        // Play / Pause button.
+        const playPauseButton = document.createElement("button");
+        playPauseButton.type = "button";
+        playPauseButton.textContent = video.paused ? "Play" : "Pause";
+
+        // Restart button.
+        const restartButton = document.createElement("button");
+        restartButton.type = "button";
+        restartButton.textContent = "Restart";
+
+        // Update Play / Pause text.
+        const updateButton = () => {
+            playPauseButton.textContent = video.paused ? "Play" : "Pause";
+        };
+
+        // Play / Pause functionality.
+        playPauseButton.addEventListener("click", () => {
+            if (video.paused) {
+                video.play().catch(error => console.warn(error));
+            } else {
+                video.pause();
+            }
+        });
+
+        // Restart functionality.
+        restartButton.addEventListener("click", () => {
+            video.currentTime = 0;
+            video.play().catch(error => console.warn(error));
+        });
+
+        // Synchronise button text.
+        video.addEventListener("play", updateButton);
+        video.addEventListener("pause", updateButton);
+        video.addEventListener("ended", updateButton);
+
+        // Assemble controls.
+        controls.appendChild(playPauseButton);
+        controls.appendChild(restartButton);
+
+        // Insert a line break and controls inside the existing paragraph.
+        leftCaption.appendChild(document.createElement("br"));
+        leftCaption.appendChild(controls);
+
+        updateButton();
+
+    });
+
+});
